@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PdfFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="click the button to generate pdf" />
+
+        <ImageButton
+            android:id="@+id/pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF"
+            />
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="toPdf"
+            android:src="@drawable/pdf" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
