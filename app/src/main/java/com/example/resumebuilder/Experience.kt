@@ -5,9 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.resumebuilder.models.CVDataBase
@@ -15,7 +12,7 @@ import com.example.resumebuilder.models.helper.ExperienceEducationDTO
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.launch
 
-class WorkExperience : BaseFragment() {
+class Experience : BaseFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,7 +43,7 @@ class WorkExperience : BaseFragment() {
         var button = view.findViewById<FloatingActionButton>(R.id.floatingActionButton)
 
         button.setOnClickListener {
-            var intent = Intent(view.context, AddExperienceEducation::class.java)
+            var intent = Intent(view.context, AddExperience::class.java)
             startActivityForResult(intent, 1)
         }
 

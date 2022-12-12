@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CheckBox
 import android.widget.CompoundButton
-import android.widget.DatePicker
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.core.view.isVisible
@@ -17,7 +16,7 @@ import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
-class AddExperienceEducation : AppCompatActivity() {
+class AddExperience : AppCompatActivity() {
     lateinit var checkBox: CheckBox
     lateinit var checkBoxIsExper: CheckBox
     lateinit var experienceEducationDTO: ExperienceEducationDTO

@@ -4,7 +4,6 @@ import android.os.Build
 import android.os.Bundle
 import android.view.*
 import android.webkit.WebView
-import androidx.fragment.app.Fragment
 import android.webkit.WebViewClient
 import androidx.annotation.RequiresApi
 import com.example.resumebuilder.models.CVDataBase
@@ -12,7 +11,7 @@ import com.example.resumebuilder.models.ExternalLinksTypesEnum
 import kotlinx.android.synthetic.main.fragment_external_links.*
 import kotlinx.coroutines.launch
 
-class ExternalLinks : BaseFragment() {
+class Contacts : BaseFragment() {
 
     lateinit var webViewItem : WebView
 

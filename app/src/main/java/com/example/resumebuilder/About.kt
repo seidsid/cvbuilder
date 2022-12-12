@@ -3,12 +3,11 @@ package com.example.resumebuilder
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
-import androidx.fragment.app.Fragment
 import com.example.resumebuilder.models.CVDataBase
 import kotlinx.android.synthetic.main.fragment_about_me.*
 import kotlinx.coroutines.launch
 
-class AboutMe : BaseFragment() {
+class About : BaseFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,7 +43,7 @@ class AboutMe : BaseFragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
             R.id.introduce-> {
-                val intent = Intent(this.context, IntroduceActivity::class.java)
+                val intent = Intent(this.context, InitActivity::class.java)
                 startActivity(intent)
             }
 

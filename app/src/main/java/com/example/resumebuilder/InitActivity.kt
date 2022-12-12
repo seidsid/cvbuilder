@@ -5,7 +5,6 @@ import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,13 +17,8 @@ import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_introduce.*
 import java.io.File
 import java.io.FileOutputStream
-import java.net.URI
-import java.text.SimpleDateFormat
-import java.util.*
-import java.util.jar.Manifest
-import javax.xml.transform.Result
 
-class IntroduceActivity : AppCompatActivity() {
+class InitActivity : AppCompatActivity() {
     var imagePath:String? = null
     var vedioPath:String? = null
 

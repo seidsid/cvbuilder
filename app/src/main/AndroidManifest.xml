@@ -15,10 +15,10 @@
         android:theme="@style/Theme.ResumeBuilder"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".AddExperienceEducation"
+            android:name=".AddExperience"
             android:exported="false" />
         <activity
-            android:name=".IntroduceActivity"
+            android:name=".InitActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

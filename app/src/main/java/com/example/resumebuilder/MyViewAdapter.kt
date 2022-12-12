@@ -10,9 +10,9 @@ class MyViewAdapter (fm: FragmentManager, lc: Lifecycle) : FragmentStateAdapter 
 
     override fun createFragment(position: Int): Fragment {
         return when(position) {
-            0 -> AboutMe()
-            1 -> WorkExperience()
-            2 -> ExternalLinks()
+            0 -> About()
+            1 -> Experience()
+            2 -> Contacts()
             3 -> PdfFragment()
             else -> Fragment()
         }

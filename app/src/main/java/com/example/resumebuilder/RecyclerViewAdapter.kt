@@ -9,13 +9,10 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.resumebuilder.models.CVDataBase
 import com.example.resumebuilder.models.helper.ExperienceEducationDTO
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import java.text.DateFormat
 
 
@@ -91,7 +88,7 @@ class RecyclerViewAdapter(var experienceEducationDTOs: ArrayList<ExperienceEduca
             }
 
             btnEdit.setOnClickListener {
-                var intent = Intent(itemView.context, AddExperienceEducation::class.java)
+                var intent = Intent(itemView.context, AddExperience::class.java)
                 intent.putExtra("ExperienceEducationDTO", experienceEducationDTO)
                 var item = itemView.context  as MainActivity
                 item.startActivityForResult(intent,1)
